@@ -1,4 +1,3 @@
-from tkinter import W
 import graphene
 from bitcoin import *
 from requests import Session
