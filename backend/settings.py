@@ -60,8 +60,6 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [
     "*",
-    "https://example.com",
-    "https://sub.example.com",
     "http://localhost:3000",
     "http://127.0.0.1:3000",
 ]
@@ -96,7 +94,7 @@ DATABASES = {
         'ENGINE': 'djongo',
         "CLIENT": {
             "name": 'Rubicoin',
-            "host": 'mongodb+srv://rubicoin:dantalia@cluster0.6oons.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
+            "host": 'mongodb+srv://rubicoin:dantalia@rubicoincluster.3wj9v.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',
             "username": 'rubicoin',
             "password": 'dantalia',
             "authMechanism": "SCRAM-SHA-1",
