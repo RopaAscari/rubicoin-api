@@ -4,3 +4,8 @@ class Constants(object):
     class VerificationTypes(object):
         Email = "Email"
         Sms = "SMS"
+
+    class NotificationTypes(object):
+        WELCOME = "WELCOME"
+        PAYEE_INVITATION = "PAYEE_INVITATION"
+

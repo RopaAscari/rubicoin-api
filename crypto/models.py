@@ -3,7 +3,7 @@ from django.db import models
 from django.contrib.postgres.fields import ArrayField
 
 class Wallet(models.Model):
-    
+    id = models.IntegerField(primary_key=True, unique=True)
     balance = models.IntegerField()
     uid = models.CharField(max_length=30)
     public_key = models.CharField(max_length=30)

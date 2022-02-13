@@ -4,6 +4,7 @@ from backend import settings
 from payment.models import Card
 from payment.types import PaymentType
 from backend.execeptions import Exceptions
+from utlis.utils import generate_id
 from .inputs import CreatePaymentInput, GetUserPaymentMethods
 
 stripe.api_key = settings.STRIPE_DEV_SK
@@ -50,6 +51,8 @@ class CreatePaymentMethod(graphene.Mutation):
             success = False
 
             card = Card()
+
+            card.id = generate_id(Card)
 
             card.uid = arguments.uid
             card.cvc = arguments.cvc

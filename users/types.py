@@ -9,15 +9,17 @@ class UserType(DjangoObjectType):
         fields = (
             'id',
             'email',
-            'password',
+            'password',         
+            'province',           
             'last_name',
-            'first_name', 
+            'ip_address',
+            'first_name',
+            'country_code',
+            'country_name',
             'date_created',
             'phone_number',
+            'terms_agreed',
+            'messaging_token',
             'wallet_connected',
-            'mining_rig_connected'
+            'mining_rig_connected'           
         )
-
-
-
-

@@ -2,7 +2,7 @@ import json
 from django.db import models
 
 class Card(models.Model):
-
+    id = models.IntegerField(primary_key=True, unique=True)
     uid = models.CharField(max_length=30)
     issuer = models.CharField(max_length=10)
     card_number = models.CharField(max_length=16)    

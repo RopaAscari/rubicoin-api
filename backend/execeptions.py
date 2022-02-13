@@ -1,5 +1,6 @@
 class Exceptions(object):
     class User(object):
+        EMAIL_EXISTS = "An account with that email already exists"
         GENERIC = "An error occured"
         CODE_INVALID = "Invalid code"
         NOT_FOUND = "User doesn't exist"
